@@ -5,8 +5,11 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+<<<<<<< HEAD
 import android.widget.ImageButton;
 import android.widget.TextView;
+=======
+>>>>>>> 39cfcf0722a981e3bd50bb81c0616d7dc4cafebe
 
 import tech.hyperdev.scorekeeper.R;
 
@@ -15,15 +18,19 @@ import tech.hyperdev.scorekeeper.R;
  */
 public class ScoreFragment extends Fragment {
 
+<<<<<<< HEAD
     String team_name;
     private int totalScore=0;
     private TextView tvTeamName;
     private TextView tvScore;
 
+=======
+>>>>>>> 39cfcf0722a981e3bd50bb81c0616d7dc4cafebe
     public ScoreFragment() {
         // Required empty public constructor
     }
 
+<<<<<<< HEAD
     public static ScoreFragment newInstance(String team){
 
         Bundle bundle = new Bundle();
@@ -78,4 +85,13 @@ public class ScoreFragment extends Fragment {
                 break;
         }
     }*/
+=======
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_score, container, false);
+    }
+
+>>>>>>> 39cfcf0722a981e3bd50bb81c0616d7dc4cafebe
 }
