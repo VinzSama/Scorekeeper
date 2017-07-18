@@ -10,5 +10,6 @@
     <style name="btnStyles">
         <item name="android:minWidth">70dp</item>
         <item name="android:minHeight">70dp</item>
+        <item name="android:background">@drawable/circle</item>
     </style>
 </resources>

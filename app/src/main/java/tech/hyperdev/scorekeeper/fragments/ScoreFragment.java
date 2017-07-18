@@ -53,7 +53,6 @@ public class ScoreFragment extends Fragment implements View.OnClickListener {
         tvScore = (TextView) view.findViewById(R.id.textView2);
         tvTeamName = (TextView) view.findViewById(R.id.tvTeamName);
         btnPlus = (ImageButton) view.findViewById(R.id.btnPlus);
-//        btnPlus.setOnClickListener((View.OnClickListener) this);
         btnMinus = (ImageButton) view.findViewById(R.id.btnMinus);
 
         readBundle(getArguments());
