@@ -13,12 +13,14 @@ import tech.hyperdev.scorekeeper.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class ScoreFragment extends Fragment {
+public class ScoreFragment extends Fragment implements View.OnClickListener {
 
     String team_name;
     private int totalScore=0;
     private TextView tvTeamName;
     private TextView tvScore;
+    private ImageButton btnPlus;
+    private ImageButton btnMinus;
 
     public ScoreFragment() {
         // Required empty public constructor
@@ -48,17 +50,32 @@ public class ScoreFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_score, container, false);
 
-//        tvScore = (TextView) view.findViewById(R.id.textView2);
+        tvScore = (TextView) view.findViewById(R.id.textView2);
         tvTeamName = (TextView) view.findViewById(R.id.tvTeamName);
-        ImageButton btnPlus = (ImageButton) view.findViewById(R.id.btnPlus);
+        btnPlus = (ImageButton) view.findViewById(R.id.btnPlus);
 //        btnPlus.setOnClickListener((View.OnClickListener) this);
-        ImageButton btnMinus = (ImageButton) view.findViewById(R.id.btnMinus);
+        btnMinus = (ImageButton) view.findViewById(R.id.btnMinus);
 
         readBundle(getArguments());
-        //        tvScore.setText(totalScore);
         tvTeamName.setText(team_name);
+
+        btnPlus.setOnClickListener(this);
+        btnMinus.setOnClickListener(this);
 
         return view;
     }
 
+    @Override
+     public void onClick(View view) {
+                switch (view.getId()) {
+                        case R.id.btnPlus:
+                                totalScore++;
+                                tvScore.setText(totalScore+"");
+                                break;
+                       case R.id.btnMinus:
+                                totalScore--;
+                                tvScore.setText(""+totalScore);
+                                break;
+                    }
+           }
 }
