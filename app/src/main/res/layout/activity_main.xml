@@ -10,36 +10,21 @@
     <fragment
         android:id="@+id/frTeam1"
         android:name="tech.hyperdev.scorekeeper.fragments.ScoreFragment"
-<<<<<<< HEAD
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
         android:layout_weight="2"
-=======
-        android:layout_width="371dp"
-        android:layout_height="200dp"
-        tools:layout="@layout/fragment_score"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="8dp"
-        android:layout_marginLeft="8dp"
->>>>>>> 39cfcf0722a981e3bd50bb81c0616d7dc4cafebe
         app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginRight="8dp"
         app:layout_constraintRight_toRightOf="parent"
-<<<<<<< HEAD
         app:layout_constraintTop_toTopOf="parent"
-=======
-        app:layout_constraintHorizontal_bias="0.333"
->>>>>>> 39cfcf0722a981e3bd50bb81c0616d7dc4cafebe
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp" />
 
     <fragment
         android:id="@+id/frTeam2"
         android:name="tech.hyperdev.scorekeeper.fragments.ScoreFragment"
-<<<<<<< HEAD
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="8dp"
@@ -51,18 +36,4 @@
         app:layout_constraintTop_toBottomOf="@+id/frTeam1"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp" />
-=======
-        android:layout_width="371dp"
-        android:layout_height="201dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        tools:layout="@layout/fragment_score"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintHorizontal_bias="0.333"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="8dp" />
->>>>>>> 39cfcf0722a981e3bd50bb81c0616d7dc4cafebe
 </android.support.constraint.ConstraintLayout>

@@ -5,11 +5,8 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-<<<<<<< HEAD
 import android.widget.ImageButton;
 import android.widget.TextView;
-=======
->>>>>>> 39cfcf0722a981e3bd50bb81c0616d7dc4cafebe
 
 import tech.hyperdev.scorekeeper.R;
 
@@ -18,19 +15,15 @@ import tech.hyperdev.scorekeeper.R;
  */
 public class ScoreFragment extends Fragment {
 
-<<<<<<< HEAD
     String team_name;
     private int totalScore=0;
     private TextView tvTeamName;
     private TextView tvScore;
 
-=======
->>>>>>> 39cfcf0722a981e3bd50bb81c0616d7dc4cafebe
     public ScoreFragment() {
         // Required empty public constructor
     }
 
-<<<<<<< HEAD
     public static ScoreFragment newInstance(String team){
 
         Bundle bundle = new Bundle();
@@ -42,11 +35,11 @@ public class ScoreFragment extends Fragment {
         return fragment;
     }
 
-/*    private void readBundle(Bundle bundle) {
-        if (bundle != null) {
+    public void readBundle(Bundle bundle){
+        if(bundle != null){
             team_name = bundle.getString("team_name");
         }
-    }*/
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -61,37 +54,11 @@ public class ScoreFragment extends Fragment {
 //        btnPlus.setOnClickListener((View.OnClickListener) this);
         ImageButton btnMinus = (ImageButton) view.findViewById(R.id.btnMinus);
 
-        Bundle bundle = getArguments();
-        team_name = bundle.getString("team_name");
+        readBundle(getArguments());
         //        tvScore.setText(totalScore);
         tvTeamName.setText(team_name);
 
         return view;
     }
 
-/*    public void setTeam_name(String team_name){
-        tvTeamName.setText(team_name+"");
-    }*/
-/*
-    public void onClick(View v){
-        switch(v.getId()){
-            case R.id.btnPlus:
-                    totalScore = Integer.parseInt(tvScore.getText().toString()) + 1;
-                    tvScore.setText(totalScore+"");
-                break;
-            case R.id.btnMinus:
-                totalScore = Integer.parseInt(tvScore.getText().toString()) - 1;
-                tvScore.setText(totalScore+"");
-                break;
-        }
-    }*/
-=======
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_score, container, false);
-    }
-
->>>>>>> 39cfcf0722a981e3bd50bb81c0616d7dc4cafebe
 }
